@@ -1,18 +1,18 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { glob } from 'glob';
+import injectHTML from 'vite-plugin-html-inject';
+import FullReload from 'vite-plugin-full-reload';
 
-export default defineConfig({
-  base: '/goit-advancedjs-hw-01/',
-  define: {
-    global: 'window',
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        gallery: resolve(__dirname, '1-gallery.html'),
-        form: resolve(__dirname, '2-form.html'),
+export default defineConfig(({ command }) => {
+  return {
+    define: {
+      global: 'window',
+    },
+    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    build: {
+      rollupOptions: {
+        input: glob.sync('./*.html'),
       },
     },
-  },
+  };
 });
