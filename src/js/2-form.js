@@ -1,4 +1,4 @@
-import './css/styles.css';
+import '../css/styles.css';
 
 const STORAGE_KEY = 'feedback-form-state';
 
