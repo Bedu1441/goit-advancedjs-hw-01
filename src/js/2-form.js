@@ -1,12 +1,12 @@
-import "./css/styles.css";
+import '../css/styles.css';
 
-const STORAGE_KEY = "feedback-form-state";
+const STORAGE_KEY = 'feedback-form-state';
 
-const form = document.querySelector(".feedback-form");
+const form = document.querySelector('.feedback-form');
 
 let formData = {
-  email: "",
-  message: "",
+  email: '',
+  message: '',
 };
 
 const savedData = localStorage.getItem(STORAGE_KEY);
@@ -16,21 +16,21 @@ if (savedData) {
     const parsedData = JSON.parse(savedData);
 
     formData = {
-      email: parsedData.email || "",
-      message: parsedData.message || "",
+      email: parsedData.email || '',
+      message: parsedData.message || '',
     };
 
     form.elements.email.value = formData.email;
     form.elements.message.value = formData.message;
   } catch (error) {
-    console.error("Failed to parse saved form data:", error);
+    console.error('Failed to parse saved form data:', error);
   }
 }
 
-form.addEventListener("input", (event) => {
+form.addEventListener('input', event => {
   const { name, value } = event.target;
 
-  if (name !== "email" && name !== "message") {
+  if (name !== 'email' && name !== 'message') {
     return;
   }
 
@@ -39,11 +39,11 @@ form.addEventListener("input", (event) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', event => {
   event.preventDefault();
 
   if (!formData.email || !formData.message) {
-    alert("Fill please all fields");
+    alert('Fill please all fields');
     return;
   }
 
@@ -52,8 +52,8 @@ form.addEventListener("submit", (event) => {
   localStorage.removeItem(STORAGE_KEY);
 
   formData = {
-    email: "",
-    message: "",
+    email: '',
+    message: '',
   };
 
   form.reset();
