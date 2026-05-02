@@ -1,14 +1,14 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
-import { images } from "./images.js";
-import "./css/styles.css";
+import { images } from './images.js';
+import './css/styles.css';
 
-const gallery = document.querySelector(".gallery");
+const gallery = document.querySelector('.gallery');
 
 const galleryMarkup = images
   .map(
-    (image) => `
+    image => `
       <li class="gallery-item">
         <a class="gallery-link" href="${image.original}">
           <img
@@ -18,14 +18,14 @@ const galleryMarkup = images
           />
         </a>
       </li>
-    `,
+    `
   )
-  .join("");
+  .join('');
 
-gallery.innerHTML = galleryMarkup;
+gallery.insertAdjacentHTML('beforeend', galleryMarkup);
 
-new SimpleLightbox(".gallery a", {
-  captionsData: "alt",
-  captionPosition: "bottom",
+new SimpleLightbox('.gallery .gallery-link', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
   captionDelay: 250,
 });

@@ -1,65 +1,47 @@
 export const images = [
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820_1280.jpg",
-    description: "Hokkaido Flower",
+    preview: 'https://picsum.photos/id/1015/360/200.jpg',
+    original: 'https://picsum.photos/id/1015/1280/800.jpg',
+    description: 'Mountain River',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/14/18/08/flower-4203051__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/14/18/08/flower-4203051_1280.jpg",
-    description: "Container Haulage Freight",
+    preview: 'https://picsum.photos/id/1016/360/200.jpg',
+    original: 'https://picsum.photos/id/1016/1280/800.jpg',
+    description: 'Forest Landscape',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/15/10/23/flower-4204855__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/15/10/23/flower-4204855_1280.jpg",
-    description: "Ait Ben Haddou Morocco",
+    preview: 'https://picsum.photos/id/1018/360/200.jpg',
+    original: 'https://picsum.photos/id/1018/1280/800.jpg',
+    description: 'Mountain View',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/16/09/47/view-4206785__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/16/09/47/view-4206785_1280.jpg",
-    description: "Flowers Valley",
+    preview: 'https://picsum.photos/id/1020/360/200.jpg',
+    original: 'https://picsum.photos/id/1020/1280/800.jpg',
+    description: 'Bear in Nature',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/16/10/19/arch-4206879__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/16/10/19/arch-4206879_1280.jpg",
-    description: "Alpine Mountains",
+    preview: 'https://picsum.photos/id/1024/360/200.jpg',
+    original: 'https://picsum.photos/id/1024/1280/800.jpg',
+    description: 'Eagle',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/17/11/10/pink-4208955__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/17/11/10/pink-4208955_1280.jpg",
-    description: "Mountain Lake Sailing",
+    preview: 'https://picsum.photos/id/1035/360/200.jpg',
+    original: 'https://picsum.photos/id/1035/1280/800.jpg',
+    description: 'Sea Coast',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/15/07/11/swan-4204121__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/15/07/11/swan-4204121_1280.jpg",
-    description: "Alpine Spring Meadows",
+    preview: 'https://picsum.photos/id/1039/360/200.jpg',
+    original: 'https://picsum.photos/id/1039/1280/800.jpg',
+    description: 'Waterfall',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/17/09/54/landscape-4208571__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/17/09/54/landscape-4208571_1280.jpg",
-    description: "Nature Landscape",
+    preview: 'https://picsum.photos/id/1043/360/200.jpg',
+    original: 'https://picsum.photos/id/1043/1280/800.jpg',
+    description: 'Lake and Mountains',
   },
   {
-    preview:
-      "https://cdn.pixabay.com/photo/2019/05/15/23/10/flower-4206549__480.jpg",
-    original:
-      "https://cdn.pixabay.com/photo/2019/05/15/23/10/flower-4206549_1280.jpg",
-    description: "Lighthouse Coast Sea",
+    preview: 'https://picsum.photos/id/1050/360/200.jpg',
+    original: 'https://picsum.photos/id/1050/1280/800.jpg',
+    description: 'Ocean View',
   },
 ];
